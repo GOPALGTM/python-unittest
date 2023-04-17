@@ -7,7 +7,7 @@ class TestATGWorldWebsite(unittest.TestCase):
         url = 'https://atg.world'
         response = requests.get(url)
         if response.status_code == 200:
-            print('The website loaded successfully!!')
+            print('The website loaded successfully!')
         else:
             print('The website did not load successfully.')
         self.assertEqual(response.status_code, 200)
